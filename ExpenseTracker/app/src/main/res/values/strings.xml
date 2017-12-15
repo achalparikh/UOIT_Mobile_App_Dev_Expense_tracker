@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="budget">Budget</string>
+    <string name="savings">Save up!</string>
+    <string name="cash_flow_report">Cash Flow Report</string>
+    <string name="home">Home</string>
+    <string name="default_number">0.00</string>
+    <string name="add_category">Category</string>
+    <string name="add_date_entry">date Entry</string>
+    <string name="add_location_entry">Location Entry</string>
+    <string name="budget_add_monthly_budget">Add Your Monthly Budget</string>
+    <string name="add_budget">Add Budget</string>
+    <string-array name="categories">
+        <item></item>
+        <item>Food</item>
+        <item>Alcohol</item>
+        <item>Living</item>
+        <item>Car</item>
+        <item>Shopping</item>
+        <item>Misc</item>
+    </string-array>
+    <string name="title_activity_add_budget">AddBudget</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="overall_budget">Overall Budget</string>
+    <string name="expenses">Expenses</string>
+    <string name="food">Food:</string>
+    <string name="living">Living:</string>
+    <string name="car_budget">Car Budget:</string>
+    <string name="alcohol_budget">Alcohol Budget:</string>
+    <string name="shopping">Shopping Budget:</string>
+    <string name="report_total_budget">Total Budget</string>
+    <string name="report_total_spent">TextView</string>
+    <string name="report_food_costs">Food Costs:</string>
+    <string name="report_living_costs">Living Costs:</string>
+    <string name="report_alcohol_costs">Alcohol Costs:</string>
+    <string name="report_car_costs">Car Costs:</string>
+    <string name="report_shopping_costs">Shopping Costs:</string>
+    <string name="report_other_costs">Other Costs:</string>
+    <string name="report_notSpent">$0</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="add_info">Add Info</string>
+    <string name="android_studio">Android Studio</string>
+    <string name="android_studio_android_com">android.studio@android.com</string>
+    <string name="add_overall_budget">Add Overall Budget</string>
+    <string name="other_budget">Other Budget:</string>
+    <string name="bank_accounts">Bank Accounts</string>
+</resources>

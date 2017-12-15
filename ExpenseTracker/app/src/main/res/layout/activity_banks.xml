@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.achal.expensetracker.Banks">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rbc"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="41dp"
+                app:srcCompat="@mipmap/rb"
+                android:onClick="goToRBC"/>
+
+            <ImageView
+                android:id="@+id/td"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignStart="@+id/rbc"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="250dp"
+                android:onClick="goToTD"
+                app:srcCompat="@mipmap/td" />
+
+            <ImageView
+                android:id="@+id/scotia"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignStart="@+id/td"
+                android:layout_marginLeft="350dp"
+                android:layout_marginRight="50dp"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/scotia"
+                android:onClick="goToScotia"/>
+        </RelativeLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

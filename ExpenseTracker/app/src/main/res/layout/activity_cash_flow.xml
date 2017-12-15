@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.achal.expensetracker.cashFlow">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:elevation="20dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/totalBud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="49dp"
+                android:text="@string/report_total_budget"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/totalBudValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/totalBud"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="31dp"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/totalSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/totalBud"
+                android:layout_below="@+id/totalBud"
+                android:layout_marginTop="45dp"
+                android:text="Total Spent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/totalSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/totalSpent"
+                android:layout_alignEnd="@+id/totalBudValue"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/foodSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/totalSpent"
+                android:layout_below="@+id/totalSpent"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/report_food_costs"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/foodSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/totalSpentValue"
+                android:layout_alignTop="@+id/foodSpent"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/alcoholSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/foodSpent"
+                android:layout_below="@+id/foodSpent"
+                android:layout_marginTop="31dp"
+                android:text="@string/report_alcohol_costs"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/alcoholSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/alcoholSpent"
+                android:layout_alignEnd="@+id/foodSpentValue"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/livingSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/alcoholSpent"
+                android:layout_below="@+id/alcoholSpent"
+                android:layout_marginTop="31dp"
+                android:text="@string/report_living_costs"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/livingSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/alcoholSpentValue"
+                android:layout_alignTop="@+id/livingSpent"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/carSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/livingSpent"
+                android:layout_below="@+id/livingSpent"
+                android:layout_marginTop="34dp"
+                android:text="@string/report_car_costs"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/carSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/carSpent"
+                android:layout_alignEnd="@+id/livingSpentValue"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/shoppingSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/carSpent"
+                android:layout_below="@+id/carSpent"
+                android:layout_marginTop="38dp"
+                android:text="@string/report_shopping_costs"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/shoppingSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/shoppingSpent"
+                android:layout_alignStart="@+id/carSpentValue"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/otherSpent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/shoppingSpent"
+                android:layout_below="@+id/shoppingSpent"
+                android:layout_marginTop="37dp"
+                android:text="@string/report_other_costs"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/otherSpentValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/otherSpent"
+                android:layout_alignBottom="@+id/otherSpent"
+                android:layout_alignStart="@+id/shoppingSpentValue"
+                android:text="@string/report_notSpent"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

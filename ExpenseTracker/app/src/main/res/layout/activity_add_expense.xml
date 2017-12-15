@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.achal.expensetracker.addExpense"
+    android:background="#f2f2f2">
+
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:hint="@string/default_number"
+        android:inputType="number|numberDecimal"
+        android:lineSpacingExtra="10sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#4ec189"
+        android:textColorLink="@android:color/transparent"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/category"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cost"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="42dp"
+        android:onClick="showCategories"
+        android:text="@string/add_category" />
+
+    <Button
+        android:id="@+id/dateEntry"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="41dp"
+        android:onClick="pickDate"
+        android:text="@string/add_date_entry" />
+
+    <Button
+        android:id="@+id/addExpense"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="53dp"
+        android:layout_toEndOf="@+id/category"
+        android:onClick="addExpToDB"
+        android:text="Add Expense" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/category"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

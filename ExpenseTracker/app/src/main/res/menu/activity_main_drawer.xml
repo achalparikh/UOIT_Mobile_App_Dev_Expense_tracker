@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/addExpense"
+            android:icon="@drawable/ic_attach_money_black_24px"
+            android:title="@string/add_expense" />
+        <item
+            android:id="@+id/editBudget"
+            android:icon="@drawable/ic_lightbulb_outline_black_24px"
+            android:title="@string/budget" />
+
+        <item
+            android:id="@+id/cashFlow"
+            android:icon="@drawable/ic_done_all_black_24px"
+            android:title="@string/cash_flow_report" />
+
+        <item
+            android:id="@+id/banks"
+            android:icon="@drawable/ic_account_balance_black_24px"
+            android:title="@string/bank_accounts" />
+    </group>
+
+    <item android:title="User">
+        <menu>
+            <item
+                android:id="@+id/userInfo"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Profile Info" />
+        </menu>
+    </item>
+
+</menu>
