@@ -1,5 +1,6 @@
 package com.example.achal.expensetracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -29,6 +30,10 @@ public class UserProfile extends AppCompatActivity {
         email = emailVal.getText().toString();
 
         Toast.makeText(this, "Welcome " + name, Toast.LENGTH_LONG).show();
+        Intent result = new Intent();
+        result.putExtra("name", name);
+        result.putExtra("email", email);
+        setResult(1);
         finish();
     }
 }

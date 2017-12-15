@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ExpenseDBHelper db;
     double setBudget, totalExpense = 0;
     private double[] individualBudgets, individualExpenses;
+    public NavigationView navView;
 
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //Navigation View Controls
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        navView = navigationView;
 
         pie = findViewById(R.id.mainPieChart);
         db = new ExpenseDBHelper(this);
@@ -123,7 +125,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         } else if (id == R.id.userInfo) {
             Intent showProfile = new Intent(this, UserProfile.class);
-            startActivity(showProfile);
+            startActivityForResult(showProfile, 3);
 
         } else if (id == R.id.banks) {
             Intent showBanks = new Intent(this, Banks.class);
@@ -152,6 +154,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (resultCode == 2) {
                 individualBudgets = data.getDoubleArrayExtra("individual");
                 setupIndividualBudgetChart();
+            }
+        } else if (requestCode == 3) {
+            if (resultCode == 1) {
+                TextView name = (TextView)navView.getHeaderView(0).findViewById(R.id.navUserName);
+                TextView email = (TextView)navView.getHeaderView(0).findViewById(R.id.navUserEmail);
+
+                name.setText(getIntent().getStringExtra("name"));
+                email.setText(getIntent().getStringExtra("email"));
+
             }
         }
     }
